@@ -13,14 +13,14 @@
 	</head>
 	<body>
 		<header
-			class="absolute top-0 left-0 bg-transparent pt-12 pl-6 pr-[31px] w-full"
+			class="absolute top-0 left-0 bg-transparent pt-12 pl-6 pr-[31px] w-full xl:pt-7 xl:pl-7 xl:pr-32"
 		>
 			<div class="container mx-auto flex justify-between w-full items-center">
 				<nav class="flex gap-0 items-center md:gap-12 lg:gap-16">
 					<a href="./index.html">
 						<img src="./images/logo.svg" alt="Logo" />
 					</a>
-					<ul class="hidden md:flex gap-8 lg:gap-16">
+					<ul class="hidden md:flex gap-8 lg:gap-16 items-center">
 						<li class="header__nemu__item"><a href="#">destinations</a></li>
 						<li class="header__nemu__item"><a href="#">experiences</a></li>
 						<li class="header__nemu__item"><a href="#">about</a></li>
@@ -43,25 +43,33 @@
 		</header>
 		<main>
 			<section
-				class="bg-hero-bg min-h-screen w-full bg-center bg-cover pt-[153px]"
+				class="bg-hero-bg min-h-screen w-full bg-center bg-cover pt-[153px] 2xl:pt-48 3xl:pt-[266px]"
 			>
-				<div class="container mx-auto pr-[30px] pl-[31px]">
+				<div
+					class="2xl-max:container xl-max:mx-auto pr-[30px] pl-[31px] md:pr-16 md:pl-11 3xl:pl-48 3xl:pr-0 4xl:pl-[250px]"
+				>
 					<h1
-						class="uppercase font-black text-[58px] leading-[63px] font-roboto md:max-w-80 md:text-7xl md:leading-[80px]"
+						class="uppercase font-black text-[58px] leading-[63px] font-roboto md:max-w-80 md:text-7xl md:leading-[80px] sm-max:text-5xl sm-max:leading-[60px] 2xl:text-[120px] 2xl:leading-[130px]"
 					>
 						explore indonesia
 					</h1>
 					<button
-						class="bg-main-red rounded-[107px] px-[92.25px] py-[16px] mt-2 mb-[54px] text-lg font-bold leading-[27px] text-white/80 text-nowrap transition-colors duration-300 border border-solid border-transparent hover:bg-transparent hover:text-white hover:border-white lg:py-6 lg:px-14 lg:text-xl lg:mt-5"
+						class="bg-main-red rounded-[107px] px-[92.25px] py-[16px] mt-2 mb-[54px] text-lg font-bold leading-[27px] text-white/80 text-nowrap transition-colors duration-300 border border-solid border-transparent hover:bg-transparent hover:text-white hover:border-white lg:py-6 lg:px-14 lg:text-xl lg:mt-5 sm-max:px-10 sm-max:py-4"
 					>
 						Start travelling
 					</button>
-					<div class="flex flex-wrap justify-center">
-						<div class="bg-black/50 pl-8 pr-[72px] pt-[35px] pb-[30px]">
-							<ul class="flex flex-wrap gap-8 justify-center">
-								<li>
+					<div
+						class="flex justify-center flex-col 3xl-max:flex-wrap items-center xl:items-end xl:flex-row xl:mt-11"
+					>
+						<div
+							class="bg-black/50 pl-8 pr-[72px] pt-[35px] pb-[30px] max-w-[314px] md:max-w-[418px] xl:max-w-max 3xl:p-[41px_128px_50px_71px] gap-0"
+						>
+							<ul
+								class="flex flex-wrap gap-8 justify-center 2xl:gap-24 3xl:gap-[78px] 4xl:gap-[198px]"
+							>
+								<li class="xl:max-w-48 3xl:max-w-[210px]">
 									<strong
-										class="text-main-red text-base leading-[18.75px] font-roboto mb-1"
+										class="text-main-red text-base leading-[18.75px] font-roboto mb-1 3xl:mb-[14px]"
 										>01</strong
 									>
 									<h3 class="text-[26px] leading-[41.08px] font-bold">
@@ -71,21 +79,21 @@
 										Lorem ipsum dolor sit amet et amet ist ame.
 									</p>
 								</li>
-								<li>
+								<li class="xl:max-w-48 3xl:max-w-[210px]">
 									<strong
-										class="text-main-red text-base leading-[18.75px] font-roboto mb-1"
+										class="text-main-red text-base leading-[18.75px] font-roboto mb-1 3xl:mb-[14px]"
 										>02</strong
 									>
 									<h3 class="text-[26px] leading-[41.08px] font-bold">
 										Title here
 									</h3>
-									<p class="text-[#939393] text-base">
+									<p class="text-[#939393] text-base 3xl:text-lg">
 										Lorem ipsum dolor sit amet et amet ist ame.
 									</p>
 								</li>
-								<li>
+								<li class="xl:max-w-48 3xl:max-w-[210px]">
 									<strong
-										class="text-main-red text-base leading-[18.75px] font-roboto mb-1"
+										class="text-main-red text-base leading-[18.75px] font-roboto mb-1 3xl:mb-[14px]"
 										>03</strong
 									>
 									<h3 class="text-[26px] leading-[41.08px] font-bold">
@@ -97,9 +105,75 @@
 								</li>
 							</ul>
 						</div>
-						<div class="">
+						<div class="xl:max-w-80 3xl:max-w-max">
 							<img src="./images/hero-video.png" alt="video" />
 						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				class="bg-walk-bg pt-10 pb-8 mx-auto bg-no-repeat bg-cover bg-center md:pt-24 md:pb-20 3xl:pt-52 3xl:pb-24"
+			>
+				<div
+					class="container mx-auto px-[30px] flex flex-wrap gap-8 items-center justify-center lg:gap-12 xl:gap-20 3xl:gap-[130px]"
+				>
+					<picture>
+						<source media="(min-width: 1320px)" srcset="./images/walk.png" />
+						<source media="(min-width: 320px)" srcset="./images/walk-sm.png" />
+						<img src="./images/walk-sm.png" alt="" />
+					</picture>
+					<div
+						class="max-w-[479px] flex flex-wrap items-center justify-center lg:justify-normal"
+					>
+						<h2
+							class="mt-8 text-[40px] leading-[46px] font-bold sm-max:text-3xl md:text-4xl md:text-center lg:text-start 3xl:text-[42px] 3xl:leading-[50px]"
+						>
+							The walkways of Indonesia spellbind
+						</h2>
+						<p
+							class="mt-5 text-base text-lighten sm-max:text-sm md:text-center lg:text-start max-w-96"
+						>
+							Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce
+							commodo magna et libero mollis rhoncus.
+						</p>
+						<button
+							class="text-lg font-bold leading-[27px] text-center bg-main-red px-[107px] py-[22px] mt-9 rounded-[32px] border border-solid border-transparent transition-colors hover:bg-transparent hover:border-white duration-300 sm-max:text-base sm-max:leading-5 sm-max:px-20 lg:px-16 3xl:py-4 3xl:px-10"
+						>
+							Learn More
+						</button>
+					</div>
+				</div>
+			</section>
+			<section
+				class="bg-palm-bg pt-10 pb-8 mx-auto bg-no-repeat bg-cover bg-center md:pt-24 md:pb-20 3xl:pt-24 3xl:pb-[305px]"
+			>
+				<div
+					class="container mx-auto px-[30px] flex flex-wrap flex-col gap-8 items-center justify-center lg:flex-row-reverse lg:gap-12 xl:gap-20 3xl:gap-[130px]"
+				>
+					<picture>
+						<source media="(min-width: 1320px)" srcset="./images/palm.png" />
+						<source media="(min-width: 320px)" srcset="./images/palm-sm.png" />
+						<img src="./images/palm-sm.png" alt="" />
+					</picture>
+					<div
+						class="max-w-[479px] flex flex-wrap items-center justify-center lg:justify-normal"
+					>
+						<h2
+							class="mt-8 text-[40px] leading-[46px] font-bold sm-max:text-3xl md:text-4xl md:text-center lg:text-start 3xl:text-[42px] 3xl:leading-[50px]"
+						>
+							Perfect beaches exude relaxation and fun
+						</h2>
+						<p
+							class="mt-5 text-base text-lighten sm-max:text-sm md:text-center lg:text-start max-w-96"
+						>
+							Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce
+							commodo magna et libero mollis rhoncus.
+						</p>
+						<button
+							class="text-lg font-bold leading-[27px] text-center bg-main-red px-[107px] py-[22px] mt-9 rounded-[32px] border border-solid border-transparent transition-colors hover:bg-transparent hover:border-white duration-300 sm-max:text-base sm-max:leading-5 sm-max:px-20 lg:px-16 3xl:py-4 3xl:px-10"
+						>
+							Learn More
+						</button>
 					</div>
 				</div>
 			</section>
