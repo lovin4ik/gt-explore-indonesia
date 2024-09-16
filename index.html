@@ -5,11 +5,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>explore indonesia</title>
 		<meta name="description" content="explore indonesia" />
-		<link rel="stylesheet" href="./css/style.css" />
 		<link
 			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+			defer
+		></script>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script type="module" src="./js/swiper.js" defer></script>
 	</head>
 	<body>
 		<header
@@ -43,7 +52,7 @@
 		</header>
 		<main>
 			<section
-				class="bg-hero-bg min-h-screen w-full bg-center bg-cover pt-[153px] 2xl:pt-48 3xl:pt-[266px]"
+				class="bg-hero-bg w-full bg-center xl-max:bg-cover pt-[153px] 2xl:pt-48 3xl:pt-[266px]"
 			>
 				<div
 					class="2xl-max:container xl-max:mx-auto pr-[30px] pl-[31px] md:pr-16 md:pl-11 3xl:pl-48 3xl:pr-0 4xl:pl-[250px]"
@@ -54,12 +63,12 @@
 						explore indonesia
 					</h1>
 					<button
-						class="bg-main-red rounded-[107px] px-[92.25px] py-[16px] mt-2 mb-[54px] text-lg font-bold leading-[27px] text-white/80 text-nowrap transition-colors duration-300 border border-solid border-transparent hover:bg-transparent hover:text-white hover:border-white lg:py-6 lg:px-14 lg:text-xl lg:mt-5 sm-max:px-10 sm-max:py-4"
+						class="bg-main-red rounded-[107px] px-[92.25px] py-[16px] mt-2text-lg font-bold leading-[27px] text-white/80 text-nowrap transition-colors duration-300 border border-solid border-transparent hover:bg-transparent hover:text-white hover:border-white lg:py-6 lg:px-14 lg:text-xl lg:mt-5 sm-max:px-10 sm-max:py-4"
 					>
 						Start travelling
 					</button>
 					<div
-						class="flex justify-center flex-col 3xl-max:flex-wrap items-center xl:items-end xl:flex-row xl:mt-11"
+						class="flex justify-center flex-col 3xl-max:flex-wrap items-center xl:items-end xl:flex-row mt-[54px] xl:mt-36 2xl:mt-[197px]"
 					>
 						<div
 							class="bg-black/50 pl-8 pr-[72px] pt-[35px] pb-[30px] max-w-[314px] md:max-w-[418px] xl:max-w-max 3xl:p-[41px_128px_50px_71px] gap-0"
@@ -176,6 +185,107 @@
 						</button>
 					</div>
 				</div>
+			</section>
+
+			<section class="bg-explore-bg w-full bg-no-repeat bg-center pt-6 pb-80">
+				<div class="container mx-auto">
+					<h2
+						class="font-bold text-[40px] leading-[46px] text-main-blue text-center mb-6"
+					>
+						Explore Our Secrets
+					</h2>
+
+					<div class="swiper max-w-[1433px] mb-[696px] 3xl:mb-[886px]">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="./images/swiper-first.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/swiper-second.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/swiper-third.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/swiper-first.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/swiper-second.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/swiper-third.png" alt="" />
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev">
+							<svg class="icon-btn-swiper" width="15px" height="24px">
+								<use xlink:href="./images/symbol.svg#icon-union-left"></use>
+							</svg>
+						</div>
+						<div class="swiper-button-next">
+							<svg class="icon-btn-swiper" width="15px" height="24px">
+								<use xlink:href="./images/symbol.svg#icon-union-right"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				class="bg-[#020C21]/75 bg-numbers-bg bg-bottom bg-no-repeat py-[69px] 2xl:py-36 3xl:py-48"
+			>
+				<div
+					class="container mx-auto flex flex-col justify-center items-center"
+				>
+					<h2
+						class="text-white font-bold text-[51px] leading-[59px] text-center 3xl:text-[60px] 3xl:leading-[90px] mb-14"
+					>
+						By The Numbers
+					</h2>
+					<p
+						class="text-lighten text-lg text-center max-w-[462px] mb-4 md:mb-10"
+					>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+						commodo magna et libero.Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit.
+					</p>
+					<ul
+						class="flex flex-wrap items-center justify-center xl:justify-normal gap-6 xl:gap-10 2xl:gap-14 3xl:gap-32"
+					>
+						<li class="flex flex-col items-center justify-center">
+							<strong
+								class="text-main-red text-[42px] leading-[49px] text-center font-bold mb-3 xl:mb-5"
+								>100+</strong
+							>
+							<p class="text-lg text-center max-w-[340px] text-lighten">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+								commodo magna et libero.
+							</p>
+						</li>
+						<li class="flex flex-col items-center justify-center">
+							<strong
+								class="text-main-red text-[42px] leading-[49px] text-center font-bold mb-3 xl:mb-5"
+								>43,000+</strong
+							>
+							<p class="text-lg text-center max-w-[340px] text-lighten">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+								commodo.
+							</p>
+						</li>
+						<li class="flex flex-col items-center justify-center">
+							<strong
+								class="text-main-red text-[42px] leading-[49px] text-center font-bold mb-3 xl:mb-5"
+								>30+</strong
+							>
+							<p class="text-lg text-center max-w-[340px] text-lighten">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+								commodo magna et libero.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="min-h-screen w-full bg-map-bg bg-no-repeat bg-map-pos">
+				<div class="container"></div>
 			</section>
 		</main>
 	</body>

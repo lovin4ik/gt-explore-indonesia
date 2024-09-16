@@ -35,7 +35,15 @@ module.exports = {
 				'walk-bg':
 					'linear-gradient(360deg, #010A20 0%, rgba(1, 10, 32, 0.9) 100%), url(../images/walk.png)',
 				'palm-bg':
-					'linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0.9) 100%), url(../images/palm.png)'
+					'linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0.9) 100%), url(../images/palm.png)',
+				'explore-bg': 'url(../images/explore-bg.png)',
+				'numbers-bg':
+					'linear-gradient(180deg, rgba(1, 10, 32, 0.9) 0%, rgba(1, 10, 32, 0.9) 100%), url(../images/explore-bg.png)',
+				'map-bg':
+					'url(../images/map-sec-bg.svg), url(../images/map-sec-bg-second.svg)'
+			},
+			backgroundPosition: {
+				'map-pos': 'left top, right bottom'
 			}
 		}
 	},

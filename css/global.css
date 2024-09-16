@@ -7,7 +7,40 @@
 body {
 	@apply min-h-screen bg-transparent font-dm-sans text-white;
 }
-
 .header__nemu__item {
 	@apply uppercase font-bold duration-300 text-sm transition-colors hover:text-white/65 xl:text-lg;
+}
+.swiper {
+	@apply flex items-center justify-center pb-7;
+}
+.swiper-slide {
+	@apply flex items-center justify-center;
+}
+.swiper-button-prev::after {
+	content: none;
+}
+.swiper-button-next::after {
+	content: none;
+}
+.swiper-button-next,
+.swiper-button-prev {
+	@apply fill-main-blue transition-colors duration-300 hover:fill-main-red;
+}
+.swiper-button-next {
+	right: 0;
+}
+.swiper-button-prev {
+	left: 0;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	@apply bottom-0 flex items-center justify-center gap-[14px] 2xl:gap-[22px];
+}
+.swiper-pagination-bullet {
+	@apply bg-[#85A3B2] h-[19px] w-[19px] transition;
+}
+.swiper-pagination-bullet-active {
+	@apply bg-main-red w-[50px] rounded-[60px] transition;
 }

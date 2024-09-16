@@ -1,5 +1,4 @@
 {
-	"dependencies": {},
 	"scripts": {
 		"twx": "npx tailwindcss -i ./css/global.css -o ./css/style.css --watch"
 	},
