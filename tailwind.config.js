@@ -42,7 +42,8 @@ module.exports = {
 				map: 'url(../images/map-sec-bg.svg), url(../images/map-sec-bg-second.svg)',
 				'map-md': 'url(../images/map-sec-bg.svg)',
 				'map-sm':
-					'url(../images/map-sm-bg.svg), url(../images/map-sm-bg-second.svg)'
+					'url(../images/map-sm-bg.svg), url(../images/map-sm-bg-second.svg)',
+				live: 'linear-gradient(180deg, rgba(1, 10, 32, 0.8) 0%, rgba(1, 10, 32, 0.8) 100%), url(../images/live-bg.png)'
 			},
 			backgroundPosition: {
 				'map-pos': 'left top, right bottom'
