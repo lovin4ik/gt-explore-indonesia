@@ -7,6 +7,9 @@
 body {
 	@apply min-h-screen bg-transparent font-dm-sans text-white;
 }
+address {
+	font-style: normal;
+}
 .header__nemu__item {
 	@apply uppercase font-bold duration-300 text-sm transition-colors hover:text-white/65 xl:text-lg;
 }
@@ -24,7 +27,7 @@ body {
 }
 .swiper-button-next,
 .swiper-button-prev {
-	@apply fill-main-blue transition-colors duration-300 hover:fill-main-red;
+	@apply fill-main-blue transition-colors duration-300 hover:fill-main-red scale-50 md:scale-100 top-[107px] md:top-[135px];
 }
 .swiper-button-next {
 	right: 0;
@@ -39,7 +42,7 @@ body {
 	@apply bottom-0 flex items-center justify-center gap-[14px] 2xl:gap-[22px];
 }
 .swiper-pagination-bullet {
-	@apply bg-[#85A3B2] opacity-100 h-[19px] w-[19px] transition;
+	@apply bg-main-blue/40 opacity-100 h-[19px] w-[19px] transition;
 }
 .swiper-pagination-bullet-active {
 	@apply bg-main-red w-[50px] rounded-[60px] transition;
