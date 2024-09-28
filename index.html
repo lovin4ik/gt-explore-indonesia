@@ -13,12 +13,14 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
+		<link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
 		<script
 			src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
 			defer
 		></script>
 		<link rel="stylesheet" href="./css/style.css" />
 		<script type="module" src="./js/swiper.js" defer></script>
+		<script type="module" src="./js/burger.js" defer></script>
 	</head>
 	<body>
 		<header
@@ -33,7 +35,7 @@
 						<li class="header__nemu__item"><a href="#">destinations</a></li>
 						<li class="header__nemu__item"><a href="#">experiences</a></li>
 						<li class="header__nemu__item"><a href="#">about</a></li>
-						<li class="header__nemu__item"><a href="#">gallery</a></li>
+						<li class="header__nemu__item"><a href="#gallery">gallery</a></li>
 					</ul>
 				</nav>
 				<div class="flex gap-7">
@@ -43,7 +45,8 @@
 						<i class="bx bx-search"></i>
 					</button>
 					<button
-						class="text-white text-2xl transition-colors hover:text-white/65 duration-300"
+						class="text-white text-2xl transition-colors hover:text-white/65 duration-300 md:hidden"
+						id="btnBurgerOpen"
 					>
 						<i class="bx bx-menu"></i>
 					</button>
@@ -392,6 +395,7 @@
 			<section>
 				<div
 					class="container mx-auto flex flex-col items-center justify-center"
+					id="gallery"
 				>
 					<h2
 						class="mt-8 2xl:mt-44 text-main-blue font-bold text-[40px] leading-[46px] 2xl:text-6xl 2xl:leading-[90px] text-center mb-5 2xl:mb-10"
@@ -575,7 +579,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="bg-[#DCE8F2]">
+			<section class="bg-[#DCE8F2]" id="experiences">
 				<div
 					class="container mx-auto 2xl:pl-[386px] 2xl:pr-[372px] pt-7 3xl:pt-28 3xl:pb-28 pb-[73px]"
 				>
@@ -721,7 +725,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="bg-main-blue relative">
+		<footer class="bg-main-blue relative" id="footer">
 			<div
 				class="container mx-auto flex justify-center items-center flex-col xl:flex-row xl:justify-between xl:items-center"
 			>
@@ -782,5 +786,17 @@
 				</address>
 			</div>
 		</footer>
+		<div class="backdrop hidden">
+			<div class="burger">
+				<nav>
+					<ul class="flex flex-col gap-6">
+						<li class="burger__nemu__item"><a href="#">destinations</a></li>
+						<li class="burger__nemu__item"><a href="#">experiences</a></li>
+						<li class="burger__nemu__item"><a href="#">about</a></li>
+						<li class="burger__nemu__item"><a href="#gallery">gallery</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 	</body>
 </html>

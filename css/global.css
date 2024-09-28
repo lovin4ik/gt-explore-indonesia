@@ -47,3 +47,13 @@ address {
 .swiper-pagination-bullet-active {
 	@apply bg-main-red w-[50px] rounded-[60px] transition;
 }
+.backdrop {
+	@apply fixed top-0 left-0 z-50 h-full w-full items-center justify-end bg-black/40 duration-300;
+	transition-property: display;
+}
+.burger {
+	@apply bg-white h-full px-4 pt-8 relative;
+}
+.burger__nemu__item {
+	@apply uppercase font-bold duration-300 text-black text-sm transition-colors hover:text-main-red;
+}
